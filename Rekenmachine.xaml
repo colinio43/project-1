@@ -1,0 +1,56 @@
+﻿<Window x:Class="Fietsenwinkel_allerlaatste_poging.Rekenmachine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Rekenmachine" Height="500" Width="400" Background="#FFB3D3EB" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".3*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width=".3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtBerekening" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" Background="white" Margin="0 0 0 25" FontSize="16px"></TextBlock>
+        <TextBlock x:Name="txtAntwoord" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" Background="white" Margin="0 60 0 0" FontSize="16px"></TextBlock>
+
+        <Button x:Name="btnReset" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Margin="15 5 5 5" Background="Black" Content="Reset" Foreground="White" FontWeight="Bold" FontSize="14px" Click="btnReset_Click"></Button>
+        <Button x:Name="btnAns" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="2" Margin="5 5 15 5" Background="Black" Content="Ans" Foreground="White" FontWeight="Bold" FontSize="14px" Click="btnAns_Click"></Button>
+
+        <Button x:Name="btnEen" Grid.Row="6" Grid.Column="1" Margin="15 5 15 5" Content="1" Background="White" Click="btnEen_Click"></Button>
+        <Button x:Name="btnTwee" Grid.Row="6" Grid.Column="2" Margin="15 5 15 5" Content="2" Background="White" Click="btnTwee_Click"></Button>
+        <Button x:Name="btnDrie" Grid.Row="6" Grid.Column="3" Margin="15 5 15 5" Content="3  " Background="White" Click="btnDrie_Click"></Button>
+
+        <Button x:Name="btnVier" Grid.Row="5" Grid.Column="1" Margin="15 5 15 5" Content="4" Background="White" Click="btnVier_Click"></Button>
+        <Button x:Name="btnVijf" Grid.Row="5" Grid.Column="2" Margin="15 5 15 5" Content="5" Background="White" Click="btnVijf_Click"></Button>
+        <Button x:Name="btnZes" Grid.Row="5" Grid.Column="3" Margin="15 5 15 5" Content="6" Background="White" Click="btnZes_Click"></Button>
+
+        <Button x:Name="btnZeven" Grid.Row="4" Grid.Column="1" Margin="15 5 15 5" Content="7" Background="White" Click="btnZeven_Click"></Button>
+        <Button x:Name="btnAcht" Grid.Row="4" Grid.Column="2" Margin="15 5 15 5" Content="8" Background="White" Click="btnAcht_Click"></Button>
+        <Button x:Name="btnNegen" Grid.Row="4" Grid.Column="3" Margin="15 5 15 5" Content="9" Background="White" Click="btnNegen_Click"></Button>
+
+        <Button x:Name="btnNull" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Margin="15 10 45 10" Content="0" Background="White" Click="btnNull_Click"></Button>
+        <Button x:Name="btnComma" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="60 10 60 10" Content="," Background="White" Click="btnComma_Click"></Button>
+
+        <Button x:Name="btnDellen" Grid.Row="4" Grid.Column="4" Height="30" Margin="15 0 15 23" Content=":" Background="Black" Foreground="White" Click="btnDellen_Click"></Button>
+        <Button x:Name="btnKeer" Grid.Row="4" Grid.Column="4" Grid.RowSpan="2" Height="30" Margin="15 12 15 0" Content="x" Background="Black" Foreground="White" Click="btnKeer_Click"></Button>
+        <Button x:Name="btnPlus" Grid.Row="5" Grid.Column="4" Grid.RowSpan="2" Height="30" Margin="15 0 15 15" Content="+" Background="Black" Foreground="White" Click="btnPlus_Click"></Button>
+        <Button x:Name="btnMin" Grid.Row="6" Grid.Column="4" Height="30" Margin="15 0 15 05" VerticalAlignment="Bottom" Content="-" Background="Black" Foreground="White" Click="btnMin_Click"></Button>
+
+        <Button x:Name="btnAntwoord" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" Margin="50 15 15 15" Content="=" Background="Black" Foreground="White" Click="btnAntwoord_Click"></Button>
+    </Grid>
+</Window>
